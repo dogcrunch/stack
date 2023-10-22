@@ -38,6 +38,12 @@ function parse(text)
             case "let":
                 js+=str+"=_stack[_stack.length-1];_stack.splice(_stack.length-1,1);"
                 break;
+            case "end":
+                js+="}";
+                break;
+            case "if":
+                js+="if(_stack[_stack.length-1]){"
+                break;
             default:
             {
                 js+="_stack.push("+keyword+"(";
