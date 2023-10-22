@@ -3,7 +3,7 @@ const defaultCode =
 push 5
 push 6
 op * // the op keyword supports all js operators
-let x
+let x // sets x equal to top of stack 
 push "x = "
 push x
 op +
