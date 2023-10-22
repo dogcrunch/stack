@@ -52,10 +52,7 @@ function parse(text)
         lines[i]+=" ";
         lines[i] = lines[i].replace( /\s\s+/g, ' ' );
         let params = findParams(lines[i]);
-        let keyword = params[0];
-        console.log(params)
-        console.log(keyword)
-        
+        let keyword = params[0];        
         switch(keyword){
             case "push":
                 js+="_stack.push("+params[1]+");"
