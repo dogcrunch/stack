@@ -4,9 +4,9 @@ push 3
 push 5
 op +
 pow
-let x
+let x // the let keyword defines a variable as the top of stack
 
-push "x = 2^(3+5)"
+push "x is equal 2^(3+5)"
 print
 
 push "x = "
