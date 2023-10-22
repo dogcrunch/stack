@@ -14,7 +14,7 @@ const parameters = {
 }
 function parse(text)
 {
-    let js = "_stack = [];";
+    let js = "_stack=[];";
     let lines = text.split("\n");
     for (let i = 0; i < lines.length; i++)
     {
