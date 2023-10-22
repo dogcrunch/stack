@@ -1,5 +1,6 @@
 const defaultCode = 
-`push 2
+`// Example 1
+push 2
 push 3
 push 5
 op +
