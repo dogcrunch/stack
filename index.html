@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>StackScript</title>
+        <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+        
+        <link rel = "stylesheet" href="style.css">
+        <script src="codemirror/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="codemirror/theme/dracula.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+        
+        <div id ="titleBar">StackScript</div>
+        <div id ="innerBody">
+            <div id = "inputOuter">
+                <div class = "topBar">
+                    Code
+                    <button id="runButton"><b>Run</b></button>
+                </div>
+                <div id = "inputInner">
+                    <textarea id = "input" ></textarea>
+                </div>
+            </div>
+            <div id = "outputOuter">
+                <div class = "topBar">
+                    Output
+                </div>
+                <div id = "outputInner">
+                    <textarea id = "output" ></textarea>
+                </div>
+            </div>
+            <script src="parser.js"></script>
+            <script src="main.js"></script>
+        </div>
+        
+    </body>
+</html>
