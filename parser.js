@@ -95,13 +95,13 @@ function parse(text)
                 js+="}";
                 break;
             case "if":
-                js+="let _temporary=_stack[_stack.length-1];_stack.splice(_stack.length-1,1);if(_temporary){"
+                js+="_temporary=_stack[_stack.length-1];_stack.splice(_stack.length-1,1);if(_temporary){"
                 break;
             case "else":
                 js += "}else{";
                 break;
             case "do":
-                js+="let _temporary=_stack[_stack.length-1];_stack.splice(_stack.length-1,1);if(!_temporary){break;}"
+                js+="_temporary=_stack[_stack.length-1];_stack.splice(_stack.length-1,1);if(!_temporary){break;}"
                 break;
             default:
             {
