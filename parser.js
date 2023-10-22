@@ -126,7 +126,7 @@ function parse(text)
                     js+=",";
                 }
                 js+="));";
-                js+="_stack.splice(_stack.length-"+(args+1)+","+args+");"
+                js+="if(_stack[_stack.length-1]!=undefined)_stack.splice(_stack.length-"+(args+1)+","+args+");"
                 js+="if(_stack[_stack.length-1]==undefined)_stack.splice(_stack.length-1,1);"
             }
         }
