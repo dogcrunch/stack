@@ -39,7 +39,7 @@ body{
     left: 50%;
 }
 .topBar{
-    position: absolute;
+    position: relative;
     top:0px;
     left: 0px;
     width:100%;
@@ -52,26 +52,36 @@ body{
     line-height:50px;
     padding-left: 20px;
 }
-#inputInner, #outputInner {
-    position: absolute;
+#inputInner, #outputInner, #stackInner {
+    position: relative;
     left: 0%;
-    top: 50px;
     width:100%;
+}
+
+#stackInner{
+    height: 200px;
+}
+
+#inputInner{
     height: calc(100% - 100px);
 }
 
+#outputInner{
+    height: calc(100% - 300px);
+}
+
 #runButton{
-    background-color: blue;
+    background-color: rgb(50, 50, 255);
     position: absolute;
     right: 10px;
-    width: 130px;
+    width: 70px;
     height: 35px;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 5px;
+    border-radius: 3px;
     border:none;
     color: white;
-    font-size:20px;
+    font-size:15px;
     font-family: 'Nunito', sans-serif;
 }
 
